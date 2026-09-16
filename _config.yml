@@ -9,9 +9,9 @@ last_name: Angenendt
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoctoral Researcher and Lecturer in Economics at TUM School of Management (Technical University of Munich); innovation economics, intellectual property, and industrial organisation.
+  Assistant Professor of Economics at SKEMA Business School (Sophia Antipolis); innovation economics, intellectual property, and industrial organisation.
 footer_text: # credits removed for a cleaner footer (al-folio's MIT licence is satisfied by the in-repo LICENSE file, not on-page attribution)
-keywords: David Angenendt, economics, innovation economics, intellectual property, industrial organisation, patents, trade secrets, TUM, Cambridge
+keywords: David Angenendt, economics, innovation economics, intellectual property, industrial organisation, patents, trade secrets, SKEMA, Cambridge, TUM
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # favicon image in /assets/img/ (cropped from the German 'D' plate badge)
 
