@@ -1,0 +1,8 @@
+# Social links and usernames, shown in the order defined here.
+# Field names MUST match the jekyll-socials plugin's known keys (e.g. x_username, not twitter_username).
+cv_pdf: /assets/pdf/cv-Angenendt.pdf # CV PDF, hosted on the site (stable undated filename; overwrite on update)
+email: david@datanecon.org
+scholar_userid: AAVc4R8AAAAJ # Google Scholar author ID
+orcid_id: 0000-0001-9583-6289 # ORCID iD
+linkedin_username: datanecon
+x_username: datanecon # X / Twitter (@datanecon)

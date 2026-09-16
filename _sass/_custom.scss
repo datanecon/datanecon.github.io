@@ -1,0 +1,88 @@
+/*******************************************************************************
+ * datanecon customizations — kept separate from upstream theme files so future
+ * al-folio updates stay clean. Imported LAST in assets/css/main.scss.
+ ******************************************************************************/
+
+// 1. Profile photo.
+//    Mobile: photo on the left with the address text beside it (al-folio's default
+//    stacks them and blows the photo up to full width). A touch bigger than before.
+//    Desktop: al-folio's floated sidebar — photo on top, address below.
+.profile {
+  float: none !important;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: none;
+  margin: 0 auto 1.25rem auto;
+
+  figure,
+  picture {
+    margin: 0;
+    flex: 0 0 180px; // photo column on mobile (~180px)
+    max-width: 180px;
+  }
+
+  .more-info {
+    flex: 1 1 auto;
+    text-align: left;
+
+    p {
+      display: block; // stack the address lines beside the photo
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .profile {
+    display: block; // stacked: photo on top, address below
+    float: right !important;
+    width: 30%;
+    max-width: 280px;
+    margin: 0 0 0 1.5rem;
+
+    figure,
+    picture {
+      flex: none;
+      max-width: none;
+    }
+  }
+}
+
+// 2. Larger, airier typography (the Jon Barron-style breathing room David liked).
+//    Bumping the root font-size scales the whole rem-based theme uniformly.
+html {
+  font-size: 17px; // up from the 16px browser default
+}
+
+body {
+  line-height: 1.7; // more space between lines
+}
+
+p {
+  margin-bottom: 1.1rem; // more space between paragraphs
+}
+
+// 3. Accent colour — blue instead of al-folio's default purple/pink.
+//    Almost everything (links, buttons, hover states, header rules, selected nav)
+//    reads --global-theme-color, so overriding it here recolours the whole site.
+:root {
+  --global-theme-color: #143279; // David's navy — matches the current Google Sites accent
+  --global-hover-color: #143279;
+  --global-code-bg-color: rgba(20, 50, 121, 0.05); // faint navy code background (was a purple tint)
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #6e93d6; // lighter navy for contrast on the dark background
+  --global-hover-color: #6e93d6;
+}
+
+// 4. Always-visible one-line plain-English summary under each publication.
+//    The brief non-specialist blurb lives in a custom `summary` bib field and
+//    renders here (muted italic); the full technical abstract stays behind the
+//    "Abs" toggle (the `abstract` field).
+.bib-summary {
+  font-style: italic;
+  color: var(--global-text-color-light, #6f6f6f);
+  margin: 0.3rem 0 0.1rem;
+  line-height: 1.5;
+}

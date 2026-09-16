@@ -1,0 +1,40 @@
+# Co-author homepage links for the publications page (al-folio / jekyll-scholar).
+# Keyed by lowercase last name; matched to each bib author by first name.
+
+"mariuzzo":
+  - firstname: ["Franco"]
+    url: https://sites.google.com/view/francomariuzzo/home
+
+"zhang":
+  - firstname: ["Junjun"]
+    url: https://research-portal.uea.ac.uk/en/persons/junjun-zhang
+
+"salter":
+  - firstname: ["Ammon"]
+    url: https://www.wbs.ac.uk/about/person/ammon-salter/
+
+"calzolari":
+  - firstname: ["Giacomo"]
+    url: https://sites.google.com/view/giacomo-calzolari
+
+"naghavi":
+  - firstname: ["Alireza"]
+    url: http://alirezanaghavi.altervista.org/
+
+"ganglmair":
+  - firstname: ["Bernhard"]
+    url: https://bganglmair.github.io/
+
+"hughes":
+  - firstname: ["Alan"]
+    url: https://www.imperial.ac.uk/people/alan.hughes
+  - firstname: ["Robert"]
+    url: https://www.cbr.cam.ac.uk/people/the-team/robert-hughes/
+
+"kitson":
+  - firstname: ["Michael"]
+    url: https://michaelkitson.org
+
+"bokhari":
+  - firstname: ["Farasat"]
+    url: https://fbokhari.github.io/
