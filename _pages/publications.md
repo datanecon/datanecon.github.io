@@ -9,11 +9,14 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-{% include bib_search.liquid %}
+{%- comment -%}
+Search/filter box suppressed for now (small publication count).
+To restore it, remove this comment wrapper: {% include bib_search.liquid %}
+{%- endcomment -%}
 
 <p class="mt-3 mb-4"><em>Working papers and other writing are listed <a href="#working-papers">further down</a> &darr;</em></p>
 
-<h2 class="mt-4">Publications</h2>
+<h2 class="mt-4">Peer-reviewed publications</h2>
 <div class="publications">
 {% bibliography %}
 </div>
