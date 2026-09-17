@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://datanecon.github.io/sitemap.xml
+Sitemap: https://www.datanecon.org/sitemap.xml
